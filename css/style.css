@@ -14,7 +14,7 @@ body{
 }
 #body{
     background-color: var(--color01);
-    width: 100vw;
+    width: 93vw;
     height: 100vh;
     margin: 5px;
 }
@@ -63,7 +63,7 @@ table > caption > img{
 }
 table{
     color: #ffffff;
-    min-width: 210px;
+    min-width: 190px;
     max-width: 300px;
     height: 160px;
     border-collapse: collapse;
@@ -78,7 +78,7 @@ td{
 #tabela{
     display: block;
     margin: auto;
-    min-width: 210px;
+    min-width: 190px;
     max-width: 300px;
     border: 3px solid var(--color02);
 }
