@@ -10,10 +10,12 @@
 }
 body{
     background-color: #000000;
-    margin: 25px;
+    margin: 20px;
 }
 #body{
     background-color: var(--color01);
+    width: 100vw;
+    height: 100vh;
     margin: 5px;
 }
 h1{
@@ -56,12 +58,12 @@ aside{
 table > caption > img{
     display: block;
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 table{
     color: #ffffff;
-    min-width: 360px;
+    min-width: 340px;
     height: 160px;
     border-collapse: collapse;
     position:relative;
@@ -73,7 +75,7 @@ td{
     padding: 10px;
 }
 #tabela{
-    display: ruby-text;
+    display: block;
     margin: auto;
     border: 3px solid var(--color02);
 }
