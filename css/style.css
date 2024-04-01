@@ -5,36 +5,54 @@
     padding: 0px;
 }
 :root{
+ --color00: #000000;
  --color01: #101010;
  --color02: #ff6f00;
+ --color03: #ffb882;
+ --color04: #ffffff;
 }
+
 body{
+    display: flex;
     background-color: #000000;
-    margin: 20px;
+    margin: 17px;
 }
 #body{
     background-color: var(--color01);
-    width: 93vw;
-    height: 100vh;
-    margin: 5px;
+    width: 100vw;
+    height: 100%;
 }
 h1{
     color: #ffffff;
     padding: 7px;
+    font-size: 2em;
+}
+h1.conteudo{
+    position: relative;
+}
+h1.conteudo::after{
+    content: " ";
+    width: 95%;
+    height: 1px;
+    background-color: var(--color02);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 p{
     color: #ffffff;
     text-align: justify;
+    text-indent: 20px;
     padding: 3px;
     margin: 4px;
 }
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color02);
 }
 a:hover{
     text-decoration: underline;
-    color: var(--color02);
+    color: var(--color03);
 }
 
 /* Cabeçalho */
@@ -44,63 +62,32 @@ header{
 header > p{
     text-align: center;
 }
-
-.grid{ 
-    margin: 4px;
+span{
+    color: var(--color02);
+}
+.grid{
+    margin: 25px;
 }
 
-/* Comteudo da Direita*/
-aside{
-
-}
-
-/* Tabela */
-table > caption > img{
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: 100%;
-}
-table{
-    color: #ffffff;
-    min-width: 190px;
-    max-width: 300px;
-    height: 160px;
-    border-collapse: collapse;
-    position:relative;
-    border: 3px solid #ffffff;
-    margin: 20px;
-}
-td{
-    border: 1px solid #ffffff;
-    padding: 10px;
-}
-#tabela{
-    display: block;
-    margin: auto;
-    min-width: 190px;
-    max-width: 300px;
-    border: 3px solid var(--color02);
-}
-
-/* Comteudo da Esquerda */
-section{
-
+/* IMAGEM */
+img{
+    width: 100%;
+    margin-top: 15px;
 }
 
 /* Rodape */
 footer{
-    display: block;
-    margin: auto;
     background-color: var(--color02);
-    text-align: center;
 }
 footer > h2{
-    margin: 10px;
     padding: 16px;
     text-align: center;
 }
 
+footer > h2 > a{
+    color: #ffffff;
+}
+
 footer > h2 > a:hover{
-    color: var(--color01);
+    color: #101010;
 }
