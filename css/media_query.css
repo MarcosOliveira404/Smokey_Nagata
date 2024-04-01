@@ -10,6 +10,14 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
+:root{
+    --color00: #000000;
+    --color01: #101010;
+    --color02: #ff5500;
+    --color03: #ff8e56;
+    --color04: #ffffff;
+}
+
 @media print {
 
 }
@@ -22,6 +30,10 @@ Grandes telas: acima de 1200px
 
     .lateral_img{
         display: none;
+    }
+    p{
+        padding: 15px;
+        font-size: 1.1em;
     }
 }
 
@@ -50,7 +62,12 @@ Grandes telas: acima de 1200px
 /* TV`s */
 @media screen and (min-width: 1200px){
     #body{
-        width: 60vw;
+        width: 50vw;
+    }
+    img{
+        width: 80%;
+        display: block;
+        margin: auto;
     }
     h1{
         font-size: 2.5em;
@@ -58,6 +75,10 @@ Grandes telas: acima de 1200px
     p{
         padding: 20px;
         font-size: 1.5em;
+    }
+
+    h1.conteudo::after{
+        height: 2px;
     }
 
     .lateral_img{

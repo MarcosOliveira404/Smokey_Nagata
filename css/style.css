@@ -7,8 +7,8 @@
 :root{
  --color00: #000000;
  --color01: #101010;
- --color02: #ff6f00;
- --color03: #ffb882;
+ --color02: #ff5500;
+ --color03: #ff8e56;
  --color04: #ffffff;
 }
 
@@ -95,4 +95,17 @@ footer > h2 > a{
 
 footer > h2 > a:hover{
     color: #101010;
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color02);
+    border-radius: 4px;
 }
