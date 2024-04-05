@@ -25,15 +25,21 @@ Grandes telas: acima de 1200px
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #body{
-        width: 80vw;
+        width: 75vw;
     }
 
     .lateral_img{
         display: none;
     }
+    img{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
     p{
         padding: 15px;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 }
 
@@ -50,6 +56,22 @@ Grandes telas: acima de 1200px
         font-size: 1.2em;
     }
 
+    .img_right{
+        display: block;
+        float: right;
+        width: 60%;
+        padding: 20px;
+        box-shadow: none;
+    }
+    .img_left{
+        display: block;
+        float: left;
+        width: 60%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+
     .lateral_img{
         display: block;
         float: left;
@@ -62,7 +84,7 @@ Grandes telas: acima de 1200px
 /* TV`s */
 @media screen and (min-width: 1200px){
     #body{
-        width: 50vw;
+        width: 55vw;
     }
     img{
         width: 80%;
@@ -79,6 +101,21 @@ Grandes telas: acima de 1200px
 
     h1.conteudo::after{
         height: 2px;
+    }
+
+    .img_right{
+        display: block;
+        float: right;
+        width: 60%;
+        padding: 20px;
+        box-shadow: none;
+    }
+    .img_left{
+        display: block;
+        float: left;
+        width: 60%;
+        padding: 20px;
+        box-shadow: none;
     }
 
     .lateral_img{
