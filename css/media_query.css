@@ -84,7 +84,7 @@ Grandes telas: acima de 1200px
 /* TV`s */
 @media screen and (min-width: 1200px){
     #body{
-        width: 55vw;
+        width: 65vw;
     }
     img{
         width: 80%;

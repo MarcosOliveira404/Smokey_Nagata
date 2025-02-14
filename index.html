@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_query.css">
 </head>
+<style>
+body {
+    background-image: url("img/imgFundo.jpg");
+    background-size: cover;  /* Cobre toda a tela sem distorcer */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetições */
+    background-attachment: fixed; /* Fixa a imagem, criando o efeito paralax */
+    height: 100%; /* Ocupa toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+/* Para testar o efeito, adicione um conteúdo longo */
+.content {
+    height: 200vh; /* Faz a página ficar longa, para poder rolar */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+    padding: 20px;
+}
+
+
+</style>
 <body>
     <!-- Ainda falta corrigir erros de texto !!! -->
 <div id="body">
     
-        <header>
-            <h1>Smokey <span>N</span>agata</h1>
-            <p>"O carro que dirigimos diz muito sobre nós"</p>
-        </header>
+    <header>
+        <h1 id="typing-effect">
+            <span>S</span><span>m</span><span>o</span><span>k</span><span>e</span><span>y</span> 
+            <span id="letraCor">N</span><span>a</span><span>g</span><span>a</span><span>t</span><span>a</span>
+        </h1>
+        <p>"O carro que dirigimos diz muito sobre nós"</p>
+    </header>
+    
+    
         <aside class="grid">
     
             <h1 class="conteudo">Kazuhiko Nagata</h1>
@@ -69,7 +95,7 @@
                 deixou Trust em 1991 para perseguir seu sonho de abrir sua própria oficina preparadora, ele a chamou de <a href="https://en.wikipedia.org/wiki/Top_Secret_(company)" target="_blank">Top Secret</a>.
             </p>
     
-            <h1 class="conteudo"> Top <span>S</span>ecret </h1>
+            <h1 class="conteudo"> Top Secret </h1>
             <img class="img_left" src="img/top_secret.avif" alt="">
             <p>
                     O momento não poderia ter cido melhor, com carros lendários sendo lançados a todas as direções,
@@ -180,4 +206,6 @@
 </div>
 
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/typing.js"></script>
 </html>
